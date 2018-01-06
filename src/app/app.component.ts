@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { todoList } from './todo-list';
+import { Todo } from './todo';
 
 
 @Component({
@@ -11,4 +12,8 @@ import { todoList } from './todo-list';
 export class AppComponent {
   title = 'Hello Angular';
   todoList = todoList;
+
+  addTodo(todo: Todo) {
+    this.todoList.unshift(todo);
+  }
 }
