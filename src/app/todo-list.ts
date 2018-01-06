@@ -14,4 +14,3 @@ export const todoList: Todo[] = [
         completed: true,
     },
 ];
-
